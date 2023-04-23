@@ -6,18 +6,87 @@
          url('../fonts/vazir.woff') format('woff');
   }
 
-  *{
-      padding: 0;
-      margin: 0;
+*{
+    padding: 0;
+    margin: 0;
   }
 
 
-  body{
-      font-family: 'vazir';
-      direction: rtl;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+body{
+    font-family: 'vazir';
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
+
+ section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  section video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+  }
+
+  section .navigation {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    display: flex;
+    width: 50vw;
+    justify-items: center;
+    justify-content: space-around;
+}
+
+section .navigation li {
+    width: 160px;
+    height: 90px;
+    list-style: none;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+section .navigation li img {
+    width: 150px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    opacity: .6;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+section .navigation li img:hover {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
